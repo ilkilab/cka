@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd-error
+spec:
+  containers:
+  - name: httpd
+    image: agorakube/httpd:error
+    ports:
+    - containerPort: 80
