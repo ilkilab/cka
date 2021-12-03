@@ -4145,10 +4145,10 @@ spec:
               name: cni-net-dir
           securityContext:
             privileged: true
-        # Adds a Flex Volume Driver that creates a per-pod Unix Domain Socket to allow Dikastes
+        # Adds a v Volume Driver that creates a per-pod Unix Domain Socket to allow Dikastes
         # to communicate with Felix over the Policy Sync API.
         - name: flexvol-driver
-          image: docker.io/calico/pod2daemon-flexvol:v3.21.1
+          image: rg.fr-par.scw.cloud/ilkilabs/pod2daemon-flexvol:v3.21.1
           volumeMounts:
           - name: flexvol-driver-host
             mountPath: /host/driver
