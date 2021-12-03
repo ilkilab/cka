@@ -4107,7 +4107,7 @@ spec:
         # This container installs the CNI binaries
         # and CNI network config file on each node.
         - name: install-cni
-          image: docker.io/calico/cni:v3.21.1
+          image: rg.fr-par.scw.cloud/ilkilabs/cni:v3.21.1
           command: ["/opt/cni/bin/install"]
           envFrom:
           - configMapRef:
@@ -4159,7 +4159,7 @@ spec:
         # container programs network policy and routes on each
         # host.
         - name: calico-node
-          image: docker.io/calico/node:v3.21.1
+          image: rg.fr-par.scw.cloud/ilkilabs/node:v3.21.1
           envFrom:
           - configMapRef:
               # Allow KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT to be overridden for eBPF mode.
@@ -4267,7 +4267,7 @@ spec:
         # This container runs flannel using the kube-subnet-mgr backend
         # for allocating subnets.
         - name: kube-flannel
-          image: quay.io/coreos/flannel:v0.13.0
+          image: rg.fr-par.scw.cloud/ilkilabs/flannel:v0.13.0
           command: [ "/opt/bin/flanneld", "--ip-masq", "--kube-subnet-mgr", "--iface=eth1" ]
           securityContext:
             privileged: true
