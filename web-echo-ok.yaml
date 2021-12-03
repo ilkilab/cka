@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: ilkiformation/web-echo:v1
+        image: rg.fr-par.scw.cloud/ilkilabs/web-echo:v1
         env:
         - name: TEXT
           value: echo1
@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: world
-        image: ilkiformation/web-echo:v1
+        image: rg.fr-par.scw.cloud/ilkilabs/web-echo:v1
         env:
         - name: TEXT
           value: echo2
@@ -104,7 +104,7 @@ spec:
     spec:
       containers:
       - name: echo3
-        image: ilkiformation/web-echo:v1
+        image: rg.fr-par.scw.cloud/ilkilabs/web-echo:v1
         env:
         - name: TEXT
           value: echo3
