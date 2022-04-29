@@ -18,6 +18,6 @@ spec:
         disktype: NotAvailable
       containers:
       - name: nginx
-        image: nginx
+        image: rg.fr-par.scw.cloud/ilkilabs/nginx
         ports:
         - containerPort: 80
