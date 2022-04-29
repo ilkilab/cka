@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: nginx:invalidversion
+      image: rg.fr-par.scw.cloud/ilkilabs/nginx:invalidversion
